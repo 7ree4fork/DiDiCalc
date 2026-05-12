@@ -13,10 +13,16 @@ jobs:
           distribution: 'temurin'
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
+      - name: Download Gradle wrapper jar
+        run: |
+          mkdir -p gradle/wrapper
+          curl -L "https://repo1.maven.org/maven2/org/gradle/gradle-wrapper/8.1/gradle-wrapper-8.1.jar" -o gradle/wrapper/gradle-wrapper.jar || \
+          wget -q "https://raw.githubusercontent.com/gradle/gradle/v8.1.0/gradle/wrapper/gradle-wrapper.jar" -O gradle/wrapper/gradle-wrapper.jar || \
+          curl -L "https://services.gradle.org/distributions/gradle-8.1-bin.zip" -o /tmp/gradle.zip && unzip -j /tmp/gradle.zip "*/gradle-wrapper.jar" -d gradle/wrapper/
       - name: Make gradlew executable
         run: chmod +x gradlew
       - name: Build APK
-        run: ./gradlew assembleDebug
+        run: ./gradlew assembleDebug --no-daemon
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
