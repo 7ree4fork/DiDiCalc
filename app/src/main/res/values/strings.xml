@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DiDi Calc</string>
+    <string name="accessibility_service_label">DiDi Calc</string>
+    <string name="accessibility_description">Lee DiDi para calcular precio por km.</string>
+</resources>

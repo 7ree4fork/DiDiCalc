@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.DiDiCalc" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#f97316</item>
+        <item name="colorPrimaryVariant">#f97316</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="android:windowBackground">#0a0a0a</item>
+        <item name="android:statusBarColor">#0a0a0a</item>
+        <item name="android:navigationBarColor">#0a0a0a</item>
+    </style>
+</resources>

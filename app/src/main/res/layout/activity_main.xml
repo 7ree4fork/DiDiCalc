@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#0a0a0a">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="DiDi Calc" android:textColor="#f97316" android:textSize="32sp" android:textStyle="bold" android:layout_marginTop="32dp" android:layout_marginBottom="8dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Calculadora automatica precio/km" android:textColor="#888888" android:textSize="14sp" android:layout_marginBottom="40dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="PASO 1" android:textColor="#f97316" android:textSize="11sp" android:layout_marginBottom="6dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Servicio de Accesibilidad" android:textColor="#FFFFFF" android:textSize="16sp" android:textStyle="bold" android:layout_marginBottom="4dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Permite leer el texto de DiDi en pantalla" android:textColor="#666666" android:textSize="13sp" android:layout_marginBottom="10dp"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="24dp">
+            <Button android:id="@+id/btn_accessibility" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:text="Ir a Configuracion" android:backgroundTint="#1e1e1e" android:textColor="#f97316" android:layout_marginEnd="12dp"/>
+            <TextView android:id="@+id/status_accessibility" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pendiente" android:textColor="#ef4444" android:textSize="13sp" android:textStyle="bold"/>
+        </LinearLayout>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="PASO 2" android:textColor="#f97316" android:textSize="11sp" android:layout_marginBottom="6dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Permiso de Superposicion" android:textColor="#FFFFFF" android:textSize="16sp" android:textStyle="bold" android:layout_marginBottom="4dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Permite mostrar el resultado encima de DiDi" android:textColor="#666666" android:textSize="13sp" android:layout_marginBottom="10dp"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="40dp">
+            <Button android:id="@+id/btn_overlay" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:text="Ir a Configuracion" android:backgroundTint="#1e1e1e" android:textColor="#f97316" android:layout_marginEnd="12dp"/>
+            <TextView android:id="@+id/status_overlay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pendiente" android:textColor="#ef4444" android:textSize="13sp" android:textStyle="bold"/>
+        </LinearLayout>
+        <Button android:id="@+id/btn_toggle_service" android:layout_width="match_parent" android:layout_height="56dp" android:text="Todo listo - Empezar" android:textSize="16sp" android:textStyle="bold" android:backgroundTint="#f97316" android:textColor="#FFFFFF" android:layout_marginBottom="20dp"/>
+    </LinearLayout>
+</ScrollView>
